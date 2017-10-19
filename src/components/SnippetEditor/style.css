@@ -1,0 +1,130 @@
+.SnippetEditor-container blockquote {
+  border-left: 2px solid #ddd;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+  color: #494958;
+}
+
+.SnippetEditor-container blockquote[dir="rtl"] {
+  border-left: none;
+  padding-left: 0;
+  padding-right: 10px;
+  border-right: 2px solid #ddd;
+}
+
+.SnippetEditor-container h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.SnippetEditor-container h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.SnippetEditor-container img {
+  max-width: 100%;
+}
+
+.SnippetEditor-container img.active {
+  box-shadow: 0 0 0 3px #494958;
+}
+
+.SnippetEditor-container p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.SnippetEditor-container div {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.SnippetEditor-container > * > * + * {
+  margin-top: 1pc;
+}
+
+:not(pre) > code {
+  background-color: #eee;
+  padding: 3px;
+}
+
+.SnippetEditor-button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  color: #dddddd;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0.5pc;
+}
+
+.SnippetEditor-button[data-active="true"] {
+  color: #fff;
+}
+
+.MediaMenu {
+  background-color: #000;
+  color: white;
+  padding-left: 0.5pc;
+  padding-right: 0.5pc;
+  border: 1px solid #fff;
+  margin-right: 3pc;
+  border-radius: 4px;
+}
+
+.SideMenu {
+  background-color: #000;
+  color: white;
+  padding-left: 0.5pc;
+  padding-right: 0.5pc;
+  border: 1px solid #fff;
+  margin-right: 3pc;
+  border-radius: 4px;
+}
+
+.SelectionMenu {
+  border: 1px solid #FFF;
+  background-color: #000;
+  padding-left: 0.5pc;
+  padding-right: 0.5pc;
+  position: absolute;
+  z-index: 1;
+  top: -10000px;
+  left: -10000px;
+  margin-top: -6px;
+  opacity: 0;
+  transition: opacity .2s;
+  border-radius: 4px;
+}
+
+.SelectionMenu .SnippetEditor-button {
+  color: #aaa;
+}
+
+.SelectionMenu .SnippetEditor-button[data-active="true"] {
+  color: #fff;
+}
+
+.SnippetEditor-inline-link {
+  color: #0000cd;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.SnippetEditor-readmore-container {
+}
+
+.SnippetEditor-readmore {
+  padding: 1pc;
+  border: 1px dashed #494958;
+  max-height: 280px;
+  overflow-y: scroll;
+  background-color: #fff;
+}

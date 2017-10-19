@@ -1,0 +1,57 @@
+.ListCard {
+  border: 1px solid #eeeeee;
+  text-decoration: none;
+}
+
+.ListCard:hover {
+  background-color: #f8f8f8;
+}
+
+.ListCard-footer-more-options {
+  float: right;
+  padding-left: 10px;
+  color: #bbbbbb;
+}
+
+.ListCard-wrapper {
+  width: 456px;
+  height: 216px;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #fff;
+}
+
+.ListCard-body {
+  position: absolute;
+  bottom: 15px;
+  color: #000;
+  font-size: 22px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.list-name {
+  padding: 2px;
+  font-size: 16px;
+  background-color: RGBA(243, 243, 243, 0.8);
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.ListCard-footer {
+  padding: 0.5pc;
+  font-weight: bold;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.ListCard-footer-date {
+  float: right;
+  padding-left: 10px;
+  color: #bbbbbb;
+}
+
+.ListItem-newsletter-title {
+  color: #fff;
+  background-color: rgba(73, 73, 88, 0.6);
+}

@@ -1,0 +1,90 @@
+.NewsletterCard {
+  border: 1px solid #eeeeee;
+  text-decoration: none;
+}
+
+.NewsletterCard:hover {
+  background-color: #f8f8f8;
+}
+
+.NewsletterCard-footer-more-options {
+  display: none;
+}
+
+.NewsletterCard:hover .NewsletterCard-footer-more-options {
+  display: block;
+  float: right;
+  padding-left: 10px;
+  color: #bbbbbb;
+}
+
+.NewsletterCard:hover .NewsletterCard-footer-date {
+  display: none;
+}
+
+.NewsletterCard-wrapper {
+  width: 456px;
+  height: 216px;
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.NewsletterCard-logo-container {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  box-sizing: border-box;
+}
+
+.NewsletterCard-logo {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.NewsletterCard--headline {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: #eee;
+  font-size: 22px;
+}
+
+.NewsletterCard--headline div {
+  padding-top: 10px;
+}
+
+.NewsletterCard-list-name {
+  padding: 2px;
+  font-size: 16px;
+  background-color: rgba(243, 243, 243, 0.9);
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.NewsletterCard-footer {
+  padding: 0.5pc;
+  font-weight: bold;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.NewsletterCard-footer-date {
+  float: right;
+  padding-left: 10px;
+  color: #bbbbbb;
+}
+
+
+.ListItem-newsletter-title {
+  color: #fff;
+  background-color: rgba(73, 73, 88, 0.6);
+}

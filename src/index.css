@@ -1,0 +1,51 @@
+body {
+  font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
+}
+
+/* remove outline from all fields */
+:active,
+:focus {
+  outline: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+  outline: none;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  outline: 0 none;
+}
+
+/* match placeholder color */
+::-webkit-input-placeholder {
+  color: #C7C7CD; /* Chrome/Opera/Safari */
+}
+::-moz-placeholder {
+  color: #C7C7CD; /* Firefox 19+ */
+}
+:-ms-input-placeholder {
+  color: #C7C7CD; /* IE 10+ */
+}
+:-moz-placeholder {
+  color: #C7C7CD; /* Firefox 18- */
+}

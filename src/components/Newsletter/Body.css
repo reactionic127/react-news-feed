@@ -1,0 +1,50 @@
+.Body-new-snippet-button {
+  margin: 1pc;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: 'Arial';
+  position: relative;
+}
+
+.Body-newsletter-cover-image-wrapper {
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+
+.Body-newsletter-title-input-wrapper {
+  margin: 2pc;
+  margin-left: 0;
+  margin-bottom: 1pc;
+}
+
+.Body-newsletter-title-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  padding-left: 2pc;
+  border-left: 4px solid #ddd;
+}
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}

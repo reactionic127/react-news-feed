@@ -1,0 +1,150 @@
+/* List of conversations */
+.Conversations-container {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin: -21px 0 0 0;
+  height: calc(100vh - 52px);
+}
+
+.Conversations-newsletters-list {
+  flex: 1 0 200px;
+  min-width: 200px;
+  max-width: 200px;
+  border-right: 1px solid #ebeef3;
+}
+
+.Conversations-list {
+  flex: 1 0 320px;
+  min-width: 320px;
+  max-width: 320px;
+  border-right: 1px solid #ebeef3;
+}
+
+.Conversations-list-item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 1em;
+  text-decoration: none;
+  transition: all 330ms ease;
+}
+
+.Conversations-list-item:hover,
+.Conversations-list-item:active,
+.Conversations-list-item:focus {
+  text-decoration: none;
+  background-color: #ebeef3;
+}
+
+.Conversations-list-item--highlighted {
+  background-color: #ebeef3;
+}
+
+.Conversation-list-item-owner {
+  order: 1;
+  width: 75%;
+  margin: 0 0 0.5rem;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #404041;
+}
+
+.Conversation-list-item-subject {
+  order: 3;
+  width: 100%;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #6D6E70;
+}
+
+.Conversation-list-item-createdAt {
+  order: 2;
+  width: 25%;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #909295;
+  text-align: right;
+}
+
+/* A single conversation; list of messages in it */
+.Conversation-placeholder {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 calc(100% - 320px - 200px);
+  padding: 1em;
+  height: 100%;
+}
+
+.Conversation-container {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 0 calc(100% - 320px - 200px);
+  height: 100%;
+}
+
+.Conversation-subject {
+  padding: calc(5% + 1rem);
+  text-align: center;
+  border-bottom: 1px solid #ebeef3;
+}
+
+.Conversation-messages {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  height: 100%;
+  overflow: auto;
+}
+
+.Conversation-new-message {
+  padding: 1em;
+  background-color: #fafaff;
+}
+
+/* A single message */
+.Conversation-message-container {
+  max-width: 75%;
+  margin: 1em;
+  padding: 1em;
+}
+
+.Conversation-message-container--outgoing {
+  align-self: flex-end;
+}
+
+.Conversation-message-data {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.Conversation-message-from {
+  margin: 0 1em 0 0.35em;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6d6e70;
+  white-space: nowrap;
+}
+
+.Conversation-message-sentAt {
+  margin: 0 0.35em 0 1em;
+  font-size: 1.25rem;
+  color: #909295;
+  white-space: nowrap;
+}
+
+.Conversation-message-body {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #e0e0e5;
+  border-radius: 1em 1em 1em 0;
+}
+
+.Conversation-message-body--outgoing {
+  background-color: #ebeef3;
+  border-radius: 1em 1em 0 1em;
+}

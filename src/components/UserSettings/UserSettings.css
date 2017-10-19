@@ -1,0 +1,10 @@
+.UserSettings-container {
+  padding: 5em 0 0;
+}
+
+.UserSettings-fullName {
+  margin: 0 0 2em;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #6D6E70;
+}

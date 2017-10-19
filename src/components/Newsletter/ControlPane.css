@@ -1,0 +1,37 @@
+.newsletter-schedule span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #888888;
+}
+
+.newsletter-changelog span{
+  font-weight: bold;
+  font-size: 16px;
+  color: #888888;
+}
+
+.newsletter-changelog span {
+  margin-top: 0.5pc;
+  margin-bottom: 0.5pc;
+}
+
+.newsletter-changelog {
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  overflow: auto;
+  max-height: 50vh;
+  margin-top: 1pc;
+  padding-top: 1pc;
+  padding-bottom: 1pc;
+  margin-bottom: 1pc;
+}
+
+.newsletter-changelog div {
+  margin-top: 0.5pc;
+  margin-bottom: 0.5pc;
+}
+
+.changelog-post{
+  font-size: 14px;
+  color: #bbb;
+}

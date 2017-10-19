@@ -1,0 +1,72 @@
+html, body {
+  font-family: Helvetica-Neue;
+  padding: 0;
+  margin: 0;
+}
+
+.loading-screen {
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 1000;
+}
+
+.loading-data{
+  display: table-cell;
+  vertical-align: middle;
+  width: 400px;
+  height: 200px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+.loading-data .sk-three-bounce > div{
+  background-color: #ddd;
+}
+
+.blur {
+  z-index: -1;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: url(#blur);
+}
+
+.lists-content {
+  padding-top: 20px;
+  width: 950px;
+  margin: auto;
+  text-align: left;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 3px;
+  border: 1px solid #bbbbbb;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.company-logo img {
+  width: 80px;
+}
+
+.preview-wrapper {
+  background-color: white;
+  position: fixed;
+  top: 20px;
+  left: 20%;
+  right: 20%;
+  overflow: auto;
+}

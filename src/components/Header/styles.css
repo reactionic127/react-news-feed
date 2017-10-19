@@ -1,0 +1,71 @@
+.header {
+  background-color: #494958;
+  vertical-align: middle;
+  padding: 10px;
+  color: #fff;
+  line-height: 52px;
+  z-index: 10;
+  display: flex;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.header-title{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.header-sections{
+  display: inline-block;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.header-sections a{
+  color: #dddddd;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.header-sections a.active{
+  border-bottom: 2px solid white;
+}
+
+.header-sections a:hover{
+  text-decoration: none;
+  background-color: #69697E;
+}
+
+/*
+Logout styles
+*/
+.dv-logout{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.dv-logout button{
+  background-color: #dddddd;
+  color: #494958;
+}
+
+.select-newsletter {
+  width: 950px;
+}
+
+.select-newsletter-list {
+  padding-left: 25px;
+  line-height: 35px;
+}
+
+.select-newsletter-list div {
+  display: inline-block;
+}
+.select-newsletter-list img {
+  margin-right: 10px;
+}
