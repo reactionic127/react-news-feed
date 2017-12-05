@@ -60,8 +60,8 @@ class SnippetEditor extends React.Component {
   };
 
   onSelectionChange = (selection, state) => {
-    let mediaMenu = getTopLevelParagraphWithNoChildren(state);
-    let sideMenu = getLastTopLevelParagraphWithChildren(state);
+    const mediaMenu = getTopLevelParagraphWithNoChildren(state);
+    const sideMenu = getLastTopLevelParagraphWithChildren(state);
 
     this.setState({
       mediaMenu,
@@ -283,8 +283,8 @@ class SnippetEditor extends React.Component {
   onPasteHtml = (e, data, state) => {
     // On paste text, if the pasted content is an image URL, insert it.
     if (isUrl(data.text) || isImage(data.text)) {
-      return this.insertImage(state, data.text)
-    };
+      return this.insertImage(state, data.text);
+    }
 
     const { document } = htmlSerializer.deserialize(data.html);
 
@@ -342,7 +342,7 @@ class SnippetEditor extends React.Component {
     e.preventDefault();
 
     if (this.state.trackedSnippetIndex) {
-      const trackedSnippetIndex = this.state.trackedSnippetIndex;
+      const {trackedSnippetIndex} = this.state;
       this.setState(
         () => {
           return {
@@ -402,7 +402,7 @@ class SnippetEditor extends React.Component {
         />
         <div className="SnippetEditor-container">
           <Editor
-            placeholder={'Type here...'}
+            placeholder="Type here..."
             placeholderStyle={{
               color: '#C7C7CD',
             }}

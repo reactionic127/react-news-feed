@@ -9,7 +9,7 @@ import {
   PageHeader,
   Button,
   FormGroup,
- } from 'react-bootstrap';
+} from 'react-bootstrap';
 
 import FormInput, {
   required,
@@ -48,7 +48,7 @@ class LoginForm extends Component {
         <Row>
           <Col xs={12} mdPush={3} md={6}>
 
-            <Panel header={'Log into Your Account'} footer={contentFooter}>
+            <Panel header="Log into Your Account" footer={contentFooter}>
               <form onSubmit={handleSubmit}>
 
                 <Field

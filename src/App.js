@@ -86,7 +86,7 @@ const configureStore = initialState => createStore(
     // applyMiddleware(epicMiddleware, thunk, api, router, logger),
     applyMiddleware(epicMiddleware, thunk, api, router),
     autoRehydrate({ log: true }),
- ),
+  ),
 );
 
 const persistConfig = {
@@ -116,7 +116,7 @@ const appReady = (cb) => {
               path="/lists/:listId/newsletters/:newsletterId?"
               component={Newsletter}
             />
-      			<PrivateRoute
+            <PrivateRoute
               exact
               path="/messages/:newsletterId?/:conversationId?"
               component={Conversations}
@@ -125,7 +125,7 @@ const appReady = (cb) => {
               exact
               path="/lists/:listId/listsetting"
               component={ListSettings}
-      			/>
+            />
             <PrivateRoute
               exact
               path="/settings"

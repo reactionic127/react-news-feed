@@ -114,7 +114,7 @@ class SignUpForm extends Component {
         <PageHeader>Welcome</PageHeader>
         <Row>
           <Col xs={12} mdPush={3} md={6}>
-            <Panel header={'Create a new Account'} footer={contentFooter}>
+            <Panel header="Create a new Account" footer={contentFooter}>
               {content}
             </Panel>
           </Col>

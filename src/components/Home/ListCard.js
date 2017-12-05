@@ -18,14 +18,14 @@ export default class ListCard extends Component {
           <div className="ListCard-body">
             <ButtonToolbar>
               <ButtonGroup className="pull-left">
-                <Link className={'active'} to={`/lists/${this.props.list.id}/newsletters`}>
+                <Link className="active" to={`/lists/${this.props.list.id}/newsletters`}>
                   <Button bsStyle="default" bsSize="sm">
                     Write a Newsletter
                   </Button>
                 </Link>
               </ButtonGroup>
               <ButtonGroup className="pull-right">
-                <Link className={'active'} to={`/lists/${this.props.list.id}/listsetting`}>
+                <Link className="active" to={`/lists/${this.props.list.id}/listsetting`}>
                   <Button bsStyle="default" bsSize="sm">
                     <img
                       alt="setting"

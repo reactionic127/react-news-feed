@@ -11,7 +11,7 @@ import {
   PageHeader,
   Button,
   FormGroup,
- } from 'react-bootstrap';
+} from 'react-bootstrap';
 
 import FormInput, {
   required,
@@ -80,7 +80,7 @@ class ForgotPasswordForm extends Component {
         <PageHeader>Account</PageHeader>
         <Row>
           <Col xs={12} mdPush={3} md={6}>
-            <Panel header={'Forgot Password?'} footer={contentFooter}>
+            <Panel header="Forgot Password?" footer={contentFooter}>
               {content}
             </Panel>
           </Col>

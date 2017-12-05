@@ -26,7 +26,7 @@ class Header extends Component {
       <Navbar collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link className={'active'} to={'/'}>
+            <Link className="active" to="/">
               Debut
             </Link>
           </Navbar.Brand>

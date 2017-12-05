@@ -60,4 +60,4 @@ export const createUserSession = (email, password) => async (dispatch) => {
   } catch (error) {
     dispatch(createUserSesssionError(error.message));
   }
-}
+};

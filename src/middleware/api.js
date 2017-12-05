@@ -48,9 +48,9 @@ const listsResponseSchema = new normalizerSchema.Object({
 const newsletterSchema = new normalizerSchema.Entity(
   'newsletters',
   {},
-// {
-//   owner: userSchema,
-// },
+  // {
+  //   owner: userSchema,
+  // },
   {
     idAttribute: newsletter => newsletter.id,
   },
@@ -134,7 +134,7 @@ export default store => next => async (action) => {
   const [requestType, successType, failureType] = types;
   next(actionWith({ type: requestType }));
 
-  const token = state.userSession.token;
+  const {token} = state.userSession;
 
   try {
     const payload = await callApi(token, endpoint, schema);

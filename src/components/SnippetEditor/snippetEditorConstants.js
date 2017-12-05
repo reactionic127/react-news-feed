@@ -64,7 +64,7 @@ export const RULES = [
         case 'quote':
           return <blockquote>{children}</blockquote>;
         default:
-          return <div></div>
+          return <div />;
       }
     },
   },
@@ -75,7 +75,7 @@ export const RULES = [
       if (!type) return;
       return {
         kind: 'mark',
-        type: type,
+        type,
         nodes: next(el.children),
       };
     },
@@ -89,7 +89,7 @@ export const RULES = [
         case 'underline':
           return <u>{children}</u>;
         default:
-          return <div></div>
+          return <div />;
       }
     },
   },
@@ -142,7 +142,7 @@ export const SCHEMA = {
       const active = state.isFocused && state.selection.hasEdgeIn(node);
       const src = node.data.get('src');
       const className = active ? 'active' : null;
-      console.log(props.attributes)
+      console.log(props.attributes);
       return <iframe width="420" height="315" src={src} className={className} frameBorder="0" allowFullScreen {...props.attributes} />;
     },
   },

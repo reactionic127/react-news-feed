@@ -5,9 +5,9 @@ export function dateToString(date_string) {
   const d = new Date(date_string);
   const datestring = {
     date: `${(`0${d.getMonth() + 1}`).slice(-2)
-      }/${
+    }/${
       (`0${d.getDate()}`).slice(-2)
-      }/${
+    }/${
       d.getFullYear().toString().substr(-2)}`,
     time: formatAMPM(d),
   };

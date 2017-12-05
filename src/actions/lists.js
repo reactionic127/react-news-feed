@@ -84,7 +84,7 @@ export const loadLists = orgId => (dispatch) => {
 };
 
 export const getAllLists = orgId => (dispatch, getState) => {
-    dispatch(fetchLists(orgId));  
+  dispatch(fetchLists(orgId));
 };
 
 export const updateList = ({ listId, orgId, name, isOnline, imageUrl }) => async (dispatch, getState) => {
@@ -116,40 +116,37 @@ export const updateList = ({ listId, orgId, name, isOnline, imageUrl }) => async
 };
 
 export const fetchImageUrl = ({ file }) => async (dispatch, getState) => {
-    dispatch(fetchImageRequest());
-    try {
-        const { token } = getState().userSession;
-        const response = await fetch(`${DEBUT_URL}/api/upload-sessions`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`,
-            },
-            body: JSON.stringify({
-                fileType: 'image/png',
-            }),
-        });
+  dispatch(fetchImageRequest());
+  try {
+    const { token } = getState().userSession;
+    const response = await fetch(`${DEBUT_URL}/api/upload-sessions`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({
+        fileType: 'image/png',
+      }),
+    });
 
-        const { errors, data } = await response.json();
+    const { errors, data } = await response.json();
 
-        if (errors && errors.length > 0) {
-            throw new Error(errors[0].message);
-        }
-
-        let uploadSession = data.uploadSession
-        console.log(uploadSession)
-        const response1 = await fetch(`${uploadSession.signedUrl}`, {
-            method: 'PUT',
-            headers: {
-                'content-type': uploadSession.fileType,
-            },
-            body: file
-        });
-
-        console.log("data", response1)
-        dispatch(fetchImageSuccess(response1.url));
-    } catch (error) {
-        console.log(error)
-        dispatch(fetchImageError(error.message));
+    if (errors && errors.length > 0) {
+      throw new Error(errors[0].message);
     }
-}
+
+    const {uploadSession} = data;
+    const response1 = await fetch(`${uploadSession.signedUrl}`, {
+      method: 'PUT',
+      headers: {
+        'content-type': uploadSession.fileType,
+      },
+      body: file
+    });
+
+    dispatch(fetchImageSuccess(response1.url));
+  } catch (error) {
+    dispatch(fetchImageError(error.message));
+  }
+};

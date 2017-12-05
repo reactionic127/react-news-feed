@@ -12,11 +12,6 @@ import { dateToString } from '../../utils/dateUtils';
 
 import './ControlPane.css';
 
-// const getDisplayName = (fullName) => {
-//   const firstName = fullName.split(' ').slice(0, -1).join(' ');
-//   return firstName || fullName;
-// };
-
 const ControlPane = ({
   newsletter,
   errorMessage,
@@ -114,7 +109,7 @@ const ControlPane = ({
             <DropdownButton
               id="previewMode"
               bsSize="sm"
-              bsStyle={'default'}
+              bsStyle="default"
               title={previewMode}
             >
               <MenuItem eventKey="1" onClick={onDesktopPreviewClick}>

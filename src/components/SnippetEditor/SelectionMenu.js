@@ -8,7 +8,7 @@ class MediaMenuPortal extends Component {
 
     this.state = {
       menu: null,
-    }
+    };
   }
 
   componentWillMount() {
@@ -55,7 +55,7 @@ class MediaMenuPortal extends Component {
     this.setState({
       menu: portal.firstChild,
     });
-  };
+  }
 
   updateMenu = () => {
     // Update the menu's absolute position.

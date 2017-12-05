@@ -67,7 +67,7 @@ class AnchoredPortal extends Component {
 
     return (
       <Portal
-        isOpened={true}
+        isOpened
         {...props}
         onOpen={this.handleOpen}
         onUpdate={this.handleUpdate}
